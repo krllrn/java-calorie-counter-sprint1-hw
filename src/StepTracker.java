@@ -31,7 +31,9 @@ public class StepTracker {
             if (monthToData.get(monthNumber).dayNumber[i] > maxOfSteps) {
                 maxOfSteps = monthToData.get(monthNumber).dayNumber[i];
             }
-            if (monthToData.get(monthNumber).dayNumber[i] > yourGoal && (monthToData.get(monthNumber).dayNumber[i+1] > yourGoal || monthToData.get(monthNumber).dayNumber[i-1] > yourGoal)) {
+            if (monthToData.get(monthNumber).dayNumber[i] > yourGoal &&
+                    (monthToData.get(monthNumber).dayNumber[i+1] > yourGoal
+                            || monthToData.get(monthNumber).dayNumber[i-1] > yourGoal)) {
                 bestSeries +=1;
             }
         }
